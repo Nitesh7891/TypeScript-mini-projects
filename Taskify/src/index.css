@@ -1,0 +1,109 @@
+/* Input container */
+.input {
+  display: flex;
+  width: 90%;
+  position: relative;
+  align-items: center;
+}
+
+/* Input box */
+.input__box {
+  width: 100%;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 15px 50px 15px 20px; /* space for button */
+  border: none;
+  outline: none; /* ✅ important */
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
+}
+
+/* Submit button */
+.input__submit {
+  position: absolute;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2f74c0;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s all;
+  box-shadow: 0 0 10px black;
+}
+
+.input__submit:hover {
+  background-color: #1c5aa6; /* ✅ hover should change */
+}
+
+.input__submit:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px black;
+}
+
+/* Todo container */
+.todos {
+  width: 90%;
+  display: flex;
+  justify-content: center; /* ✅ better alignment */
+  flex-wrap: wrap;
+  gap: 10px; /* ✅ spacing */
+}
+
+/* Single todo */
+.single_todo {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 20px;
+  background-color: goldenrod;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  box-shadow: 0 0 5px black;
+}
+
+/* Todo text */
+.single_todo_text {
+  flex: 1;
+  font-size: 18px;
+  word-break: break-word;
+}
+
+/* Input while editing */
+.single_todo input {
+  flex: 1;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Icons container */
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Individual icons */
+.icons svg {
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+/* Hover effect */
+.icons svg:hover {
+  transform: scale(1.2);
+}
+
+/* Completed todo (optional better styling) */
+.single_todo s {
+  opacity: 0.6;
+}
