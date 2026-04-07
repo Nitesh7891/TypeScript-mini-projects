@@ -1,73 +1,127 @@
-# React + TypeScript + Vite
+# 📝 Taskify - TypeScript Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Taskify is a simple and interactive **Todo List application** built using **React + TypeScript**.
+It allows users to add, edit, delete, and mark tasks as completed.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* ➕ Add new tasks
+* ✏️ Edit existing tasks
+* ❌ Delete tasks
+* ✅ Mark tasks as completed
+* 🔁 Toggle completion status
+* 🎯 Clean and responsive UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* ⚛️ React
+* 🟦 TypeScript
+* 🎨 CSS
+* 🎯 React Icons
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📂 Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+Taskify/
+│
+├── src/
+│   ├── components/
+│   │   ├── InputField.tsx
+│   │   ├── TodoList.tsx
+│   │   └── SingleTodo.tsx
+│   │
+│   ├── models/
+│   │   └── Todo.ts
+│   │
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── index.css
+│
+├── public/
+└── package.json
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Installation & Setup
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository
+
 ```
+git clone https://github.com/Nitesh7891/TypeScript-mini-projects.git
+```
+
+2. Navigate to the project folder
+
+```
+cd TypeScript-mini-projects/Taskify
+```
+
+3. Install dependencies
+
+```
+npm install
+```
+
+4. Run the app
+
+```
+npm start
+```
+
+---
+
+## 📸 Features Preview
+
+* Add tasks using input field
+* Edit tasks inline
+* Strike-through completed tasks
+* Delete tasks instantly
+
+---
+
+## 🧠 Learning Highlights
+
+This project helps in understanding:
+
+* React functional components
+* Props and state management
+* TypeScript interfaces
+* Event handling in React
+* Conditional rendering
+* Array methods (`map`, `filter`)
+
+---
+
+## 📌 Future Improvements
+
+* 📦 Local storage persistence
+* 🔍 Search & filter tasks
+* 📱 Better mobile UI
+* 🌙 Dark mode
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repo and improve it. Pull requests are welcome!
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Nitesh Kumar**
+
+GitHub: https://github.com/Nitesh7891
